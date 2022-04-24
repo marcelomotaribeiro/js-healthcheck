@@ -1,0 +1,20 @@
+[
+    { "id": 1, "tag": "API Gateway (STG)", "url": "https://api.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 2, "tag": "API Importador de Cadeias (STG)", "url": "https://cadeias.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 3, "tag": "API Hub Genérico (STG)", "url": "https://eventos.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 4, "tag": "API Laboratorial (STG)", "url": "https://laboratoriais.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 5, "tag": "Hub Laboratorial (STG)", "url": "https://hub.elogroup-dev-sda.com/login", "expectedStatus": 200 },
+    { "id": 6, "tag": "API Capta (STG)", "url": "https://certificados.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 7, "tag": "Capta (STG)", "url": "https://capta.elogroup-dev-sda.com", "expectedStatus": 304 },
+    { "id": 8, "tag": "Shiva Receptores (STG)", "url": "https://receptores.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 9, "tag": "Shiva Integradores (STG)", "url": "https://integradores.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 10, "tag": "Shiva Registradores (STG)", "url": "https://registradores.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 11, "tag": "Shiva Leitores (STG)", "url": "https://leitores.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 12, "tag": "Shiva Requisitos (STG)", "url": "https://requisitos.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 13, "tag": "Shiva ePhyto's (STG)", "url": "https://ephytos.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 14, "tag": "Shiva (STG)", "url": "https://shiva.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 15, "tag": "Shiva iFrame (STG)", "url": "https://iframe.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com", "expectedStatus": 200 },
+    { "id": 17, "tag": "API Laboratorial (PRD)", "url": "https://laboratoriais.elogroup-sda.com", "expectedStatus": 200 },
+    { "id": 18, "tag": "Hub Laboratorial (PRD)", "url": "https://hub.elogroup-sda.com", "expectedStatus": 200 }
+]
