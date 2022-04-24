@@ -12,7 +12,7 @@
     { "id": 11, "tag": "Shiva Leitores (STG)", "url": "https://api.elogroup-dev-sda.com/leitores/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 12, "tag": "Shiva Requisitos (STG)", "url": "https://api.elogroup-dev-sda.com/requisitos/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 13, "tag": "Shiva ePhyto's (STG)", "url": "https://api.elogroup-dev-sda.com/ephytos/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
-    { "id": 14, "tag": "Shiva (STG)", "url": "https://shiva.elogroup-dev-sda.com/favicon.png", "expectedStatus": 200, "cors": true },
+    { "id": 14, "tag": "Shiva (STG)", "url": "https://shiva.elogroup-dev-sda.com/assets/govbr.png", "expectedStatus": 200, "cors": true },
     { "id": 15, "tag": "Shiva iFrame (STG)", "url": "https://iframe.elogroup-dev-sda.com/favicon.png", "expectedStatus": 200, "cors": true },
     { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com", "expectedStatus": 200, "cors": false },
     { "id": 17, "tag": "API Laboratorial (PRD)", "url": "https://api.elogroup-sda.com/laboratoriais/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
