@@ -5,7 +5,7 @@
     { "id": 4, "tag": "API Laboratorial (STG)", "url": "https://laboratoriais.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 5, "tag": "Hub Laboratorial (STG)", "url": "https://hub.elogroup-dev-sda.com/login", "expectedStatus": 200 },
     { "id": 6, "tag": "API Capta (STG)", "url": "https://certificados.elogroup-dev-sda.com", "expectedStatus": 200 },
-    { "id": 7, "tag": "Capta (STG)", "url": "https://capta.elogroup-dev-sda.com", "expectedStatus": 304 },
+    { "id": 7, "tag": "Capta (STG)", "url": "https://capta.elogroup-dev-sda.com/favicon.png", "expectedStatus": 200 },
     { "id": 8, "tag": "Shiva Receptores (STG)", "url": "https://receptores.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 9, "tag": "Shiva Integradores (STG)", "url": "https://integradores.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 10, "tag": "Shiva Registradores (STG)", "url": "https://registradores.elogroup-dev-sda.com", "expectedStatus": 200 },
