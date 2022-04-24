@@ -1,5 +1,5 @@
 [
-    { "id": 1, "tag": "API Gateway (STG)", "url": "https://api.elogroup-dev-sda.com", "expectedStatus": 200 },
+    { "id": 1, "tag": "API Gateway (STG)", "url": "https://api.elogroup-dev-sda.com", "expectedStatus": 302 },
     { "id": 2, "tag": "API Importador de Cadeias (STG)", "url": "https://cadeias.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 3, "tag": "API Hub Genérico (STG)", "url": "https://eventos.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 4, "tag": "API Laboratorial (STG)", "url": "https://laboratoriais.elogroup-dev-sda.com", "expectedStatus": 200 },
@@ -14,7 +14,7 @@
     { "id": 13, "tag": "Shiva ePhyto's (STG)", "url": "https://ephytos.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 14, "tag": "Shiva (STG)", "url": "https://shiva.elogroup-dev-sda.com", "expectedStatus": 200 },
     { "id": 15, "tag": "Shiva iFrame (STG)", "url": "https://iframe.elogroup-dev-sda.com", "expectedStatus": 200 },
-    { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com", "expectedStatus": 200 },
+    { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com", "expectedStatus": 302 },
     { "id": 17, "tag": "API Laboratorial (PRD)", "url": "https://laboratoriais.elogroup-sda.com", "expectedStatus": 200 },
     { "id": 18, "tag": "Hub Laboratorial (PRD)", "url": "https://hub.elogroup-sda.com", "expectedStatus": 200 }
 ]
