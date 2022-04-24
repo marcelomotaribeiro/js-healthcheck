@@ -1,5 +1,5 @@
 [
-    { "id": 1, "tag": "API Gateway (STG)", "url": "https://api.elogroup-dev-sda.com", "expectedStatus": 200, "cors": false },
+    { "id": 1, "tag": "API Gateway (STG)", "url": "https://api.elogroup-dev-sda.com/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 2, "tag": "API Importador de Cadeias (STG)", "url": "https://api.elogroup-dev-sda.com/cadeias/v1/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 3, "tag": "API Hub Genérico (STG)", "url": "https://api.elogroup-dev-sda.com/eventos/v1/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 4, "tag": "API Laboratorial (STG)", "url": "https://api.elogroup-dev-sda.com/laboratoriais/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
@@ -14,7 +14,7 @@
     { "id": 13, "tag": "Shiva ePhyto's (STG)", "url": "https://api.elogroup-dev-sda.com/ephytos/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 14, "tag": "Shiva (STG)", "url": "https://shiva.elogroup-dev-sda.com/assets/govbr.png", "expectedStatus": 200, "cors": true },
     { "id": 15, "tag": "Shiva iFrame (STG)", "url": "https://iframe.elogroup-dev-sda.com/favicon.png", "expectedStatus": 200, "cors": true },
-    { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com", "expectedStatus": 200, "cors": false },
+    { "id": 16, "tag": "API Gateway (PRD)", "url": "https://api.elogroup-sda.com/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 17, "tag": "API Laboratorial (PRD)", "url": "https://api.elogroup-sda.com/laboratoriais/v1/v3/api-docs", "expectedStatus": 200, "cors": false },
     { "id": 18, "tag": "Hub Laboratorial (PRD)", "url": "https://hub.elogroup-sda.com/favicon.ico", "expectedStatus": 200, "cors": true }
 ]
