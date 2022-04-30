@@ -22,39 +22,29 @@ export default class HealthPanel {
                         <p id="moment${healthcheck.id}"></p>
                         <div id="spinner${healthcheck.id}" class="spinner-border text-primary" role="status">
                             <span class="visually-hidden">Carregando...</span>
-                        </div>
-                        <img id="img${healthcheck.id}" style="display: none"></img>                     
+                        </div>                 
                     </div>
                 </div>`
             setInterval(() => {
-                if (healthcheck.cors) {
-                    const loadImgFavIcon = () => this.update({ status: healthcheck.expectedStatus, healthcheck: healthcheck })
-                    const errorImgFavIcon = () => this.update({ status: -1, healthcheck: healthcheck })
-                    document.getElementById(`img${healthcheck.id}`).onload = loadImgFavIcon
-                    document.getElementById(`img${healthcheck.id}`).onerror = errorImgFavIcon
-                    document.getElementById(`img${healthcheck.id}`).src = healthcheck.url
-                } else {
-                    var headers = new Headers()
-                    headers.append('cache-control', 'no-cache')
-                    var init = {
-                        method: 'GET',
-                        headers: headers,
-                        mode: 'cors'
-                    }
-                    var request = new Request(healthcheck.url)                           
-                    fetch(request, init)
-                    .then(response => this.update({ status: response.status, healthcheck: healthcheck }))
-                    .catch(() => this.update({ status: -1, healthcheck: healthcheck }))
+                var headers = new Headers()
+                headers.append('cache-control', 'no-cache')
+                var init = {
+                    method: 'GET',
+                    headers: headers,
+                    mode: 'no-cors'
                 }
-
-            }, 5000);                
+                var request = new Request(healthcheck.url)
+                fetch(request, init)
+                    .then((response) => this.update({ ok: response.status == 200 || response.status == 0, healthcheck: healthcheck }))
+                    .catch(() => this.update({ ok: false, healthcheck: healthcheck }))
+            }, 10000)                
         }
     }
 
     update(event) {
         document.getElementById(`spinner${event.healthcheck.id}`).style = 'display: none;'
-        document.getElementById(`image${event.healthcheck.id}`).src = `${event.status == event.healthcheck.expectedStatus ? 'success' : 'fail'}.png`
-        document.getElementById(`image${event.healthcheck.id}`).alt = event.status == event.healthcheck.expectedStatus ? 'success' : 'fail'
+        document.getElementById(`image${event.healthcheck.id}`).src = `${event.ok ? 'success' : 'fail'}.png`
+        document.getElementById(`image${event.healthcheck.id}`).alt = event.ok ? 'success' : 'fail'
         document.getElementById(`tag${event.healthcheck.id}`).innerHTML = `<small>${event.healthcheck.tag}</small>`
         document.getElementById(`moment${event.healthcheck.id}`).innerHTML = `<small>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</small>`
     }
