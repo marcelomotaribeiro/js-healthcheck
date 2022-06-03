@@ -10,4 +10,4 @@ Em execução, uma página será exibida mostrando um quadro para cada endpoint.
 
 A cada 10 segundos, a aplicação irá executar uma requisição ao endpoint e indicará se o recurso está online ou não, indicando o horário da última verificação.
 
-**Limitações**: Se trata de um código implementado para fins didáticos, cujo o propósito é trabalhar habilidades de requisições assíncronas. Em cenários reais, indicamos utilizar outras ferramentas, robustas, para Healthcheck.
+**Limitações**: Se trata de um código implementado para fins didáticos, cujo o propósito é trabalhar habilidades de requisições assíncronas. Em cenários reais, indicamos utilizar outras ferramentas, robustas, para HealthCheck.
