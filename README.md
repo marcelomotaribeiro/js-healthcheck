@@ -1,6 +1,6 @@
 # js-healthcheck
  
-O propósito deste respositório é fornecer um exemplo de implementação de um painel de verificação de básica de HealthCheck de Endpoints.
+O propósito deste respositório é fornecer um exemplo de implementação de um painel de verificação de básica de HealthCheck de endpoints http.
 
 Os endpoints a serem verificados devem ser adicionados em um arquivo JSON, cuja estrutura deve obedecer a mesma usada neste exemplo: https://github.com/marcelomotaribeiro/js-healthcheck/blob/main/public/data.json.
 
