@@ -1,6 +1,6 @@
 {
     "title": "Crie um arquivo data.json e adicione o path no arquivo de ambiente (.env)",
     "data": [
-        { "id": 1, "tag": "Github", "urlHealth": "https://www.github.com", "urlHome": "https://www.github.com", "logo": null }
+        { "id": 1, "tag": "Github", "urlHealth": "https://www.github.com", "urlHome": "https://www.github.com", "logo": null, "cors": true }
     ]
 }

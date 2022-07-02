@@ -14,7 +14,7 @@ export default class HealthPanel {
     render(data) {
         document.getElementById('title').innerHTML = data.title
         const body = document.getElementById('items')
-        for(let healthcheck of data.data) { console.log(healthcheck.logo)
+        for(let healthcheck of data.data) {
             body.innerHTML +=
                 `<div id="spinner${healthcheck.id}" class="mt-2 ms-2 text-center" style="width: 15rem;" >
                     <div class="spinner-border text-primary" role="status">
@@ -42,12 +42,12 @@ export default class HealthPanel {
                 var init = {
                     method: 'GET',
                     headers: headers,
-                    mode: 'no-cors'
+                    mode: healthcheck.cors ? 'no-cors' : 'cors'
                 }
                 var request = new Request(healthcheck.urlHealth)
                 fetch(request, init)
-                    .then((response) => this.update({ ok: response.status == 200 || response.status == 0, healthcheck: healthcheck }))
-                    .catch(() => this.update({ ok: false, healthcheck: healthcheck }))
+                .then(response => this.update({ ok: healthcheck.cors ? true : response.status == 200, healthcheck: healthcheck }))
+                .catch(() => this.update({ ok: false, healthcheck: healthcheck }))
             }, 10000)                
         }
     }
@@ -55,7 +55,6 @@ export default class HealthPanel {
     update(event) {
         document.getElementById(`spinner${event.healthcheck.id}`).style = 'display: none;'
         document.getElementById(`card${event.healthcheck.id}`).style = 'width: 15rem;'
-
         document.getElementById(`image${event.healthcheck.id}`).src = `${event.ok ? 'success' : 'fail'}.png`
         document.getElementById(`image${event.healthcheck.id}`).alt = event.ok ? 'success' : 'fail'
         document.getElementById(`tag${event.healthcheck.id}`).innerHTML = `<small>${event.healthcheck.tag}</small>`
