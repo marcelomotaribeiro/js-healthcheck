@@ -14,7 +14,7 @@ export default class HealthPanel {
     render(data) {
         document.getElementById('title').innerHTML = data.title
         const body = document.getElementById('items')
-        for(let healthcheck of data.data) {
+        for(let healthcheck of data.data) { console.log(healthcheck.logo)
             body.innerHTML +=
                 `<div id="spinner${healthcheck.id}" class="mt-2 ms-2 text-center" style="width: 15rem;" >
                     <div class="spinner-border text-primary" role="status">
@@ -31,7 +31,9 @@ export default class HealthPanel {
                             <a class="btn btn-outline-primary g-col-6" id="link1${healthcheck.id}" target="_blank">Health link</a>
                             <a class="btn btn-outline-primary g-col-6" id="link2${healthcheck.id}" target="_blank">Home</a>
                         </div>
-
+                        <div>
+                            <img src="${healthcheck.logo ?? 'logo.png'}" />
+                        </div>
                     </div>
                 </div>`
             setInterval(() => {
