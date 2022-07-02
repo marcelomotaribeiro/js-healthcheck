@@ -14,6 +14,12 @@ export default class HealthPanel {
     render(data) {
         document.getElementById('title').innerHTML = data.title
         const body = document.getElementById('items')
+        const getImg = (logo) => {
+            if (logo) {
+                return `<img src="${logo}"/>`
+            }
+            return '';
+        }
         for(let healthcheck of data.data) {
             body.innerHTML +=
                 `<div id="spinner${healthcheck.id}" class="mt-2 ms-2 text-center" style="width: 15rem;" >
@@ -32,7 +38,17 @@ export default class HealthPanel {
                             <a class="btn btn-outline-primary g-col-6" id="link2${healthcheck.id}" target="_blank">Home</a>
                         </div>
                         <div>
-                            <img src="${healthcheck.logo ?? 'logo.png'}" />
+                            ${healthcheck.logo1 ? getImg(healthcheck.logo1) : '' }
+                            ${healthcheck.logo2 ? getImg(healthcheck.logo2) : '' }
+                            ${healthcheck.logo3 ? getImg(healthcheck.logo3) : '' }
+                            ${healthcheck.logo4 ? getImg(healthcheck.logo4) : '' }
+                            ${healthcheck.logo5 ? getImg(healthcheck.logo5) : '' }
+                            ${healthcheck.logo6 ? getImg(healthcheck.logo6) : '' }
+                            ${healthcheck.logo7 ? getImg(healthcheck.logo7) : '' }
+                            ${healthcheck.logo8 ? getImg(healthcheck.logo8) : '' }
+                            ${healthcheck.logo9 ? getImg(healthcheck.logo9) : '' }
+                            ${healthcheck.logo10 ? getImg(healthcheck.logo10) : '' }
+                            ${healthcheck.logo11 ? getImg(healthcheck.logo11) : '' }
                         </div>
                     </div>
                 </div>`
